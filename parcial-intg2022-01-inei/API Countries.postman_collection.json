@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "266e8602-68d2-41d0-9427-96eeee325757",
+		"name": "API Countries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17812839"
+	},
+	"item": [
+		{
+			"name": "Get Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/countries/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"countries",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Country",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"USA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put (Update) Country",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mexico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/countries/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"countries",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Country",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/countries/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"countries",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
